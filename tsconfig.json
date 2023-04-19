@@ -1,14 +1,22 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2017",
-    "lib": ["es2020", "dom"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "outDir": "./dist/cjs",
     "moduleResolution": "node",
-    "typeRoots": ["./types", "./node_modules/@types"],
-    "types": ["node"],
-    "sourceMap": true,
-    "declaration": true,
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
+    "sourceMap": false,
+    "declaration": false,
     "strict": true,
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
@@ -19,5 +27,10 @@
     "noPropertyAccessFromIndexSignature": true,
     "suppressImplicitAnyIndexErrors": true
   },
-  "exclude": ["clients", "clean.js", "webpack.config.js", "dist"]
+  "exclude": [
+    "clients",
+    "clean.js",
+    "webpack.config.js",
+    "dist"
+  ]
 }
